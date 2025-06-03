@@ -27,14 +27,14 @@ Este projeto é um estudo de caso sobre os dados da COVID-19 no Brasil, com foco
 - **Fonte:** Dados obtidos do Brasil.IO, baseados em boletins das Secretarias Estaduais de Saúde.
 - **Tabelas Utilizadas:**
   - `caso`: Contém casos confirmados e óbitos por município/estado.
-  - **Observação:** Inicialmente, a tabela "obito_cartorio" que registra óbitos totais e por causas específicas, foi considerada. No entanto, ao final do projeto e dada a inutilização da base, o código foi readaptado para não importar tal tabela, visando economizar recursos.
+  - **Observação:** Inicialmente, a tabela "obito_cartorio", que registra óbitos totais e por causas específicas, foi considerada. No entanto, ao final do projeto, como a base não foi utilizada, o código foi readaptado para não importar esta tabela, visando economizar recursos.
 - **Origem dos Arquivos:** Disponíveis em https://brasil.io/dataset/covid19/files/
 
 ---
 
 # 3. Objetivos do Projeto
 - **Ingestão de Dados**: Carregar a base de dados no Cloud Storage.
-- **Automação**: Automatizar a Ingestão e a ETL.
+- **Automação**: Automatizar a ingestão e ETL.
 - **Consultas SQL**: Responder as perguntas com consultas SQL no BigQuery.
 - **Dashboard**: Criar um dashboard interativo no Looker Studio.
 
@@ -50,7 +50,7 @@ Este projeto é um estudo de caso sobre os dados da COVID-19 no Brasil, com foco
 
 # 5. Execução do Projeto
   ### 5.1. Etapa 1: Ingestão de Dados
-    - Realizado o download do arquivo zipado (caso.csv.gz) do site Brasil.IO.
+    - Foi realizado o download do arquivo compactado (caso.csv.gz) do site Brasil.IO.
     - Arquivo salvo no Google Drive para armazenamento e acesso.
     - Utilizado o Google Colab com Python para estruturar e transformar os dados, preparando-os para ingestão.
     - Carregamento (loading) dos dados transformados para o BigQuery, garantindo a integração com o dataset covid.
@@ -68,7 +68,7 @@ Este projeto é um estudo de caso sobre os dados da COVID-19 no Brasil, com foco
     - Totalizadores estáticos: Total de casos confirmados, óbitos confirmados, municípios atingidos, população total, municípios com óbitos.
     - Tabela: Data, município, estado, casos confirmados, casos por 100k habitantes, óbitos, taxa de letalidade, óbitos por 100k habitantes.
     - Gráfico: Linha representando óbitos e confirmados acumulados por dia no Brasil.
-    - Análise adicional: Mapa geográfico para melhor compreensão visual do impacto social da covid-19.
+    - Análise adicional: Mapa geográfico para melhor compreensão visual do impacto social da COVID-19.
     
 ---
 
@@ -76,13 +76,13 @@ Este projeto é um estudo de caso sobre os dados da COVID-19 no Brasil, com foco
   - **[Dashboard - Looker Studio](https://lookerstudio.google.com/reporting/aa3a82ee-6d6a-4a20-a876-bc40f596db8d)**
   - **[Repositório - Google Drive](https://drive.google.com/drive/folders/1xb_j0d21MzVk0JrsP64os8hvfDyqdqCZ?usp=sharing)**
   - **[Script Python - Google Colab](https://colab.research.google.com/drive/1qz9BJX1J6JzG4iQb73uf7jPnj-PFoiTr?usp=sharing)**
-  - **[Resolução SQL/BigQuery - Google Dococumentos](https://docs.google.com/document/d/1-7zCOye4ZQGnowvWWe4Kh7ZxkDDvHrsVotKsCV17Sks/edit?usp=sharing)**
+  - **[Resolução SQL/BigQuery - Google Documentos](https://docs.google.com/document/d/1-7zCOye4ZQGnowvWWe4Kh7ZxkDDvHrsVotKsCV17Sks/edit?usp=sharing)**
 
 ---
 
 # 7. Possíveis Melhorias Futuras
   - **API para Dados em Streaming:** Implementar uma API para capturar e processar dados da COVID-19 em tempo real.
-  - **Google Functions:** Utilizar o Cloud Functions par automatizar a extração e ingestão.
+  - **Google Functions:** Utilizar o Cloud Functions para automatizar a extração e ingestão.
   - **Modularização no Script:** Reorganizar o script Python em módulos reutilizáveis.
   - **Otimizar o desempenho das consultas SQL:** Profissionalizar as consultas SQL, refinando a linguagem.
 
