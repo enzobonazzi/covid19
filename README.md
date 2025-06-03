@@ -9,9 +9,6 @@
 3. **Objetivos do Projeto**
 4. **Tecnologias Utilizadas**
 5. **Execução do Projeto**
-   5.1. **Etapa 1: Ingestão de Dados**
-   5.2. **Etapa 2: Análise no BigQuery**
-   5.3. **Etapa 3: Dashboard no Looker Studio**
 6. **Recursos Compartilhados**
 7. **Possíveis Melhorias Futuras**
 8. **Contato**
